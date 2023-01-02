@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="bg-info">
+    <div class="d-flex justify-content-center align-items-center p-5">
+      <div class="bg-white p-4 shadow rounded w-75">
+        <h1>Sign Up</h1>
+        <div class="p-2">
+          <select onchange="selectCategory()" class="inp" name="" id="category">
+            <option value="">Select Category</option>
+            <option value="doctor">Doctor</option>
+            <option value="user">User</option>
+          </select>
+        </div>
+        <div class="p-2">
+          <input class="inp" type="text" placeholder="Name" name="" id="name" />
+        </div>
+        <div class="p-2 w-50">
+          <input
+            style="display: none"
+            class="inp"
+            type="time"
+            placeholder="Start Time"
+            name=""
+            id="startTime"
+          />
+        </div>
+        <div class="p-2 w-50">
+          <input
+            style="display: none"
+            class="inp"
+            type="time"
+            placeholder="End Time"
+            name=""
+            id="endTime"
+          />
+        </div>
+        <div class="p-2">
+          <input
+            style="display: none"
+            class="inp"
+            type="text"
+            placeholder="Location"
+            name=""
+            id="location"
+          />
+        </div>
+        <div class="p-2">
+          <input
+            class="inp"
+            type="text"
+            placeholder="Email"
+            name=""
+            id="email"
+          />
+        </div>
+        <div class="p-2">
+          <input
+            class="inp"
+            type="text"
+            placeholder="Password"
+            name=""
+            id="password"
+          />
+        </div>
+        <div class="p-2 text-center">
+          <button onclick="signUp()" class="btn btn-info px-5 rounded-0">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="signup.js"></script>
+  </body>
+</html>
